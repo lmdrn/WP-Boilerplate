@@ -11,7 +11,7 @@
         ]);
     ?>
     <div class="mycustomtheme">
-        Fait avec le &#x1f499 par <a href="https://up-to-you.ch">Up to you</a>
+		Made with love :)
     </div>
 </div>
 
