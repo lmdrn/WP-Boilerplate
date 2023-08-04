@@ -21,7 +21,7 @@ require_once 'includes/bs4Navwalker.php';
 // add basic theme supports
 add_theme_support('post-thumbnails');
 add_theme_support('title-tag');
-load_theme_textdomain('uptoyoutheme', get_template_directory() . '/languages');
+load_theme_textdomain('mycustomtheme', get_template_directory() . '/languages');
 add_theme_support('automatic-feed-links');
 
 // This theme uses wp_nav_menu() in two locations.
@@ -44,7 +44,7 @@ add_theme_support(
 );
 
 // Remove customizer options.
-function uptoyoutheme_remove_customizer_options($wp_customize)
+function mycustomtheme_remove_customizer_options($wp_customize)
 {
     // $wp_customize->remove_section( 'static_front_page' );
     // $wp_customize->remove_section( 'title_tagline' );
@@ -57,10 +57,10 @@ function uptoyoutheme_remove_customizer_options($wp_customize)
     // $wp_customize->remove_panel( 'widgets' );
 }
 
-add_action('customize_register', 'uptoyoutheme_remove_customizer_options', 30);
+add_action('customize_register', 'mycustomtheme_remove_customizer_options', 30);
 
 // Proper way to enqueue scripts and styles.
-function uptoyoutheme_scripts()
+function mycustomtheme_scripts()
 {
     // Add version number to css
     $theme_v = wp_get_theme()->get('Version');
@@ -96,28 +96,28 @@ function uptoyoutheme_scripts()
     wp_enqueue_style('base-style', get_stylesheet_uri(), array(), $theme_v, 'all');
 }
 
-add_action('wp_enqueue_scripts', 'uptoyoutheme_scripts');
+add_action('wp_enqueue_scripts', 'mycustomtheme_scripts');
 
 /** Enqueue Adobe Fonts **/
 
-function uptoyou_webfont_url($webfont_url) {
+function mycustomtheme_webfont_url($webfont_url) {
 	return 'https://use.typekit.net/fxg7kke.css';
 }
-add_filter('uptoyou_custom_webfont', 'uptoyou_webfont_url');
+add_filter('mycustomtheme_custom_webfont', 'mycustomtheme_webfont_url');
 
-function uptoyou_add_late_assets() {
-	wp_enqueue_style('my-theme-font', apply_filters( 'uptoyou_custom_webfont', ''), array(), null);
+function mycustomtheme_add_late_assets() {
+	wp_enqueue_style('my-theme-font', apply_filters( 'mycustomtheme_custom_webfont', ''), array(), null);
 }
 
-add_action( 'wp_footer', 'uptoyou_add_late_assets');
+add_action( 'wp_footer', 'mycustomtheme_add_late_assets');
 
 
-function uptoyou_add_editor_styles() {
-	add_editor_style( array( apply_filters( 'uptoyou_custom_webfont', '') ));
+function mycustomtheme_add_editor_styles() {
+	add_editor_style( array( apply_filters( 'mycustomtheme_custom_webfont', '') ));
 
 }
 
-add_action('after_setup_theme', 'uptoyou_add_editor_styles' );
+add_action('after_setup_theme', 'mycustomtheme_add_editor_styles' );
 
 // Remove WP emoji
 remove_action('wp_head', 'print_emoji_detection_script', 7);

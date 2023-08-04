@@ -61,7 +61,7 @@
 // mapboxgl.accessToken = 'pk.eyJ1IjoibGVhLXVwdG95b3UiLCJhIjoiY2wyajV0dzZqMHU2YjNjb2pkYTlqb20xNyJ9.guZkuAjSuEV665fzEMzc9Q';
 // 	const map = new mapboxgl.Map({
 // 	container: 'map', // container ID
-// 	style: 'mapbox://styles/lea-uptoyou/cl3kcaghy009t14mfe117etiu', // style URL
+// 	style: 'mapbox://styles/lea-mycustomtheme/cl3kcaghy009t14mfe117etiu', // style URL
 // 	center: [7.188252, 46.6], // starting position [lng, lat]
 // 	zoom: 7
 // });

@@ -3,8 +3,8 @@ Theme Name: My Website Theme
 Theme URI: https://up-to-you.ch/
 Author: Léa Medrano
 Author URI: https://leamedrano.myportfolio.com/
-Description: uptoyoutheme
-Text Domain: uptoyoutheme
+Description: mycustomthemetheme
+Text Domain: mycustomthemetheme
 Requires at least: WordPress 5.6
 Version: 1.0
 */
@@ -481,14 +481,14 @@ video {
     margin-right: 4px;
 }
 
-.uptoyou {
+.mycustomtheme {
     text-align: center;
     color: black;
     padding: 20px;
     font-size: 12px;
 }
 
-.uptoyou a {
+.mycustomtheme a {
     color: #0445d1;
 }
 
