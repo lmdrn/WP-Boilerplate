@@ -1,0 +1,252 @@
+/*
+Theme Name: My Website Theme
+Theme URI: https://wordpress.org
+Author: Léa Medrano
+Author URI: https://leamedrano.myportfolio.com/
+Description: digital_lab_themetheme
+Text Domain: digital_lab_themetheme
+Requires at least: WordPress 5.6
+Version: 1.0
+*/
+
+/****
+WP CUSTOM
+ */
+
+.top-header {
+    position: fixed;
+    top: 0;
+}
+
+.admin-bar .top-header {
+    top: 32px;
+}
+
+/*****
+VARS
+ */
+
+html {
+    font-size: 18px;
+}
+
+:root {
+    --main-font: 'Manrope', sans-serif;
+    --accent-font: "Maax Medium";
+    --accent-bold-font: "Maax Bold";
+    --accent-font-light: "Maax Light";
+    --main-color: #003A70;
+    --accent-color: #2AD2C9;
+    --basic-color: #ffffff;
+    --container-width-s: 1180px;
+    --container-width-m: 1420px;
+    --header-height: 120px;
+}
+
+/*****
+GENERAL
+ */
+
+body {
+    margin-bottom: -15px;
+    font-family: var(--main-typo);
+}
+
+section {
+    padding: var(--margin-m) 0;
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--basic-color);
+}
+
+li {
+    list-style: none;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*****
+DISPOSITION
+ */
+
+.di__container-small {
+    width: var(--container-width-s);
+    margin: 0 auto;
+}
+
+.di__container-big {
+    width: var(--container-width-m);
+    margin: 0 auto;
+}
+
+/*****
+TYPOS
+ */
+
+h1, .ty__h1 {
+
+}
+
+
+h2, .ty__h2 {
+
+}
+
+h3, .ty__h3 {
+}
+
+h4, .ty__h4 {
+}
+
+h5, .ty__h5 {
+
+}
+
+h6, .ty__h6 {
+
+}
+
+p, .ty__p {
+
+}
+
+
+/*****
+BUTTONS
+ */
+
+
+.el__btn {
+
+}
+
+a.el__btn {
+
+}
+
+
+/*****
+SECTIONS
+ */
+
+
+/* HEADER */
+
+.contact-mobile {
+    display: none;
+}
+
+.navbar {
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 25px 40px;
+    z-index: 99;
+}
+
+.navbar a {
+    font-family: var(--accent-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--main-color);
+}
+
+.navbar .custom-logo-link img {
+    width: auto;
+    height: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--main-color);
+    padding: 0 20px;
+}
+
+#menu-header {
+    align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+    color: var(--accent-color);
+}
+
+.el__nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.el__btn-navbar {
+    width: 22.85px;
+    height: 25px;  
+}
+
+.el__nav-bar > a > p {
+    color: var(--basic-color);
+}
+
+.burger-mobile {
+    display: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.active {
+    display: block !important;
+}
+
+/* FOOTER */
+
+.el__footer-link-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    font-family: var(--accent-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--basic-color);
+}
+
+.el__footer-link-img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.digital_lab_theme {
+    text-align: center;
+    color: black;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.digital_lab_theme a {
+    color: #0445d1;
+}
+
+/* RESPONSIVE */
