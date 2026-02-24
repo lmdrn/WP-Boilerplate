@@ -246,7 +246,12 @@ SECTIONS
 }
 
 .digital_lab_theme a {
-    color: #0445d1;
+    color: #bb87e5;
 }
 
 /* RESPONSIVE */
+@media (max-width: 992px) {
+    .di__container-big, .di__container-small {
+        width: 100%;
+    }
+}
