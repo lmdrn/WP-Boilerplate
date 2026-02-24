@@ -13,12 +13,10 @@ WORDPRESS_DB_NAME
 
 `cd docker`
 
-démarrer le container --> `sudo docker-compose up -d`
+démarrer le container --> `docker-compose up -d`
 
-stopper le container -->  ` sudo docker-compose down`
+stopper le container -->  `docker-compose down`
 
-stopper tous les containers --> `sudo docker stop $(sudo docker ps -a -q)
-`
 ## mettre à jour la base de donnée via docker
 
-`sudo docker exec -i docker_db-wordpress_1 mysql -uroot -psomewordpress NOM-BDD < FICHIER-SQL-A-UTILISER.sql`
+`docker exec -i docker_db-wordpress_1 mysql -uroot -psomewordpress wp-digitallab < ../BDD/FICHIER-SQL-A-UTILISER.sql`
