@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-03-12 17:37:27+0000\n"
+"PO-Revision-Date: 2024-03-04 13:18:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"X-Generator: GlotPress/4.0.0-beta.3\n"
 "Language: fr\n"
 "Project-Id-Version: Themes - Twenty Twenty-One\n"
 
@@ -17,7 +17,7 @@ msgid "Twenty Twenty-One is a blank canvas for your ideas and it makes the block
 msgstr "Twenty Twenty-One est un canevas vierge conçu pour vos créations et pour donner tout son sens à l’éditeur de blocs. Ce thème utilise les nouvelles compositions de blocs qui vous permettent de créer de belles mises en pages en quelques secondes, ainsi que des couleurs douces et attirantes. Son graphisme est fait pour mettre en valeur votre travail avant tout. Essayez-le ! Vous verrez combien Twenty Twenty-One rend honneur à votre portfolio, à votre site professionnel ou à votre blog personnel."
 
 #. Theme Name of the theme
-#: classes/class-twenty-twenty-one-dark-mode.php:381 inc/block-patterns.php:24
+#: classes/class-twenty-twenty-one-dark-mode.php:385 inc/block-patterns.php:24
 #, gp-priority: high
 msgid "Twenty Twenty-One"
 msgstr "Twenty Twenty-One"
@@ -32,8 +32,8 @@ msgstr "<span class=\"nav-short\">Publications</span> plus récentes"
 
 #: classes/class-twenty-twenty-one-customize-notice-control.php:40
 #: classes/class-twenty-twenty-one-dark-mode.php:178
-msgid "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
-msgstr "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
+msgid "https://wordpress.org/documentation/article/twenty-twenty-one/#dark-mode-support"
+msgstr "https://fr.wordpress.org/support/article/twenty-twenty-one/#prise-en-charge-du-mode-sombre"
 
 #. translators: %s: Twenty Twenty-One support article URL.
 #: classes/class-twenty-twenty-one-dark-mode.php:177
@@ -44,15 +44,15 @@ msgstr "Le mode sombre est un réglage au niveau de l’appareil. Si un visiteur
 msgid "Dark Mode can also be turned on and off with a button that you can find in the bottom corner of the page."
 msgstr "Le mode sombre peut également être activé et désactivé à l’aide d’un bouton que vous pouvez trouver dans le coin inférieur de la page."
 
-#: classes/class-twenty-twenty-one-dark-mode.php:380
+#: classes/class-twenty-twenty-one-dark-mode.php:384
 msgid "This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred."
 msgstr "Ce site utilise LocalStorage pour enregistrer le réglage lorsque la prise en charge du mode sombre est activée ou désactivée.<br> LocalStorage est nécessaire pour que le réglage fonctionne et n’est utilisé que lorsqu’une personne clique sur le bouton Mode sombre.<br>Aucune donnée n’est enregistrée dans la base de données ou transférée."
 
-#: classes/class-twenty-twenty-one-dark-mode.php:379
+#: classes/class-twenty-twenty-one-dark-mode.php:383
 msgid "Suggested text:"
 msgstr "Texte suggéré :"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:378
+#: classes/class-twenty-twenty-one-dark-mode.php:382
 msgid "Twenty Twenty-One uses LocalStorage when Dark Mode support is enabled."
 msgstr "Twenty Twenty-One utilise LocalStorage lorsque la prise en charge du mode sombre est activée."
 
@@ -129,37 +129,37 @@ msgstr "Ce thème nécessite WordPress 5.3 ou plus récent. Vous utilisez la ver
 msgid "Page %"
 msgstr "Page %"
 
-#: functions.php:187
+#: functions.php:180
 msgctxt "Font size"
 msgid "XXXL"
 msgstr "XXXL"
 
-#: functions.php:181
+#: functions.php:174
 msgctxt "Font size"
 msgid "XXL"
 msgstr "XXL"
 
-#: functions.php:175
+#: functions.php:168
 msgctxt "Font size"
 msgid "XL"
 msgstr "XL"
 
-#: functions.php:169
+#: functions.php:162
 msgctxt "Font size"
 msgid "L"
 msgstr "L"
 
-#: functions.php:163
+#: functions.php:156
 msgctxt "Font size"
 msgid "M"
 msgstr "M"
 
-#: functions.php:157
+#: functions.php:150
 msgctxt "Font size"
 msgid "S"
 msgstr "S"
 
-#: functions.php:151
+#: functions.php:144
 msgctxt "Font size"
 msgid "XS"
 msgstr "XS"
@@ -180,16 +180,16 @@ msgstr[1] "%s commentaires"
 msgid "1 comment"
 msgstr "1 commentaire"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:334
+#: classes/class-twenty-twenty-one-dark-mode.php:338
 msgid "On"
 msgstr "On"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:331
+#: classes/class-twenty-twenty-one-dark-mode.php:335
 msgid "Off"
 msgstr "Off"
 
 #. translators: %s: On/Off
-#: classes/class-twenty-twenty-one-dark-mode.php:321
+#: classes/class-twenty-twenty-one-dark-mode.php:325
 msgid "Dark Mode: %s"
 msgstr "Mode sombre : %s"
 
@@ -197,7 +197,8 @@ msgstr "Mode sombre : %s"
 msgid "This content is password protected. Please enter a password to view."
 msgstr "Ce contenu est protégé par un mot de passe. Veuillez saisir le mot de passe pour le voir."
 
-#: inc/menu-functions.php:34
+#. translators: Hidden accessibility text.
+#: inc/menu-functions.php:35
 msgid "Open menu"
 msgstr "Ouvrir le menu"
 
@@ -420,12 +421,12 @@ msgid "Categorized as %s"
 msgstr "Catégorisé comme %s"
 
 #. translators: Used between list items, there is a space after the comma.
-#: functions.php:654
+#: functions.php:653
 msgid ", "
 msgstr ", "
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: image.php:70 image.php:95 inc/template-tags.php:92 inc/template-tags.php:133
+#: image.php:70 image.php:96 inc/template-tags.php:92 inc/template-tags.php:133
 #: template-parts/content/content-page.php:48
 msgid "Edit %s"
 msgstr "Modifier %s"
@@ -543,7 +544,8 @@ msgstr "Un nouveau thème portfolio par défaut pour WordPress"
 msgid "Large text"
 msgstr "Grand texte"
 
-#: image.php:83
+#. translators: Hidden accessibility text.
+#: image.php:84
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "Taille originale"
@@ -568,120 +570,121 @@ msgstr "Fermer"
 msgid "Menu"
 msgstr "Menu"
 
-#: functions.php:76 inc/starter-content.php:154
+#: functions.php:69 inc/starter-content.php:154
 #: template-parts/header/site-nav.php:13
 msgid "Primary menu"
 msgstr "Menu principal"
 
-#: header.php:26
+#. translators: Hidden accessibility text.
+#: header.php:29
 msgid "Skip to content"
 msgstr "Aller au contenu"
 
-#: functions.php:363
+#: functions.php:356
 msgid "Add widgets here to appear in your footer."
 msgstr "Ajoutez ici des widgets qui apparaîtront dans votre pied de page."
 
-#: functions.php:361
+#: functions.php:354
 msgid "Footer"
 msgstr "Pied de page"
 
-#: functions.php:309
+#: functions.php:302
 msgid "Red to purple"
 msgstr "Du rouge au violet"
 
-#: functions.php:304
+#: functions.php:297
 msgid "Purple to red"
 msgstr "Du violet au rouge"
 
-#: functions.php:299
+#: functions.php:292
 msgid "Yellow to red"
 msgstr "Du jaune au rouge"
 
-#: functions.php:294
+#: functions.php:287
 msgid "Red to yellow"
 msgstr "Du rouge au jaune"
 
-#: functions.php:289
+#: functions.php:282
 msgid "Yellow to green"
 msgstr "Du jaune au vert"
 
-#: functions.php:284
+#: functions.php:277
 msgid "Green to yellow"
 msgstr "Du vert au jaune"
 
-#: functions.php:279
+#: functions.php:272
 msgid "Yellow to purple"
 msgstr "Du jaune au violet"
 
-#: functions.php:274
+#: functions.php:267
 msgid "Purple to yellow"
 msgstr "Du violet au jaune"
 
-#: functions.php:263
+#: functions.php:256
 msgid "White"
 msgstr "Blanc"
 
-#: functions.php:258
+#: functions.php:251
 msgid "Yellow"
 msgstr "Jaune"
 
-#: functions.php:253
+#: functions.php:246
 msgid "Orange"
 msgstr "Orange"
 
-#: functions.php:248
+#: functions.php:241
 msgid "Red"
 msgstr "Rouge"
 
-#: functions.php:243
+#: functions.php:236
 msgid "Purple"
 msgstr "Violet"
 
-#: functions.php:238
+#: functions.php:231
 msgid "Blue"
 msgstr "Bleu"
 
-#: functions.php:233
+#: functions.php:226
 msgid "Green"
 msgstr "Vert"
 
-#: functions.php:228
+#: functions.php:221
 msgid "Gray"
 msgstr "Gris"
 
-#: functions.php:223 inc/block-styles.php:107
+#: functions.php:216 inc/block-styles.php:107
 msgid "Dark gray"
 msgstr "Gris foncé"
 
-#: functions.php:218
+#: functions.php:211
 msgid "Black"
 msgstr "Noir"
 
-#: functions.php:186
+#: functions.php:179
 msgid "Gigantic"
 msgstr "Gigantesque"
 
-#: functions.php:180
+#: functions.php:173
 msgid "Huge"
 msgstr "Énorme"
 
-#: functions.php:174
+#: functions.php:167
 msgid "Extra large"
 msgstr "Très grand"
 
-#: functions.php:168
+#: functions.php:161
 msgid "Large"
 msgstr "Grand"
 
-#: functions.php:162
+#: functions.php:155
 msgid "Normal"
 msgstr "Normal"
 
-#: functions.php:156
+#: functions.php:149
 msgid "Small"
 msgstr "Petit"
 
-#: functions.php:150
+#: functions.php:143
 msgid "Extra small"
 msgstr "Très petit"
 
@@ -690,7 +693,7 @@ msgstr "Très petit"
 msgid "Proudly powered by %s."
 msgstr "Fièrement propulsé par %s"
 
-#: footer.php:24 functions.php:77 inc/starter-content.php:165
+#: footer.php:24 functions.php:70 inc/starter-content.php:165
 msgid "Secondary menu"
 msgstr "Menu secondaire"
 

@@ -34,8 +34,10 @@ class QM_Dispatcher_REST extends QM_Dispatcher {
 
 		$this->before_output();
 
-		/* @var QM_Output_Headers[] */
-		foreach ( $this->get_outputters( 'headers' ) as $id => $output ) {
+		/** @var array<string, QM_Output_Headers> $outputters */
+		$outputters = $this->get_outputters( 'headers' );
+
+		foreach ( $outputters as $output ) {
 			$output->output();
 		}
 
@@ -76,6 +78,31 @@ class QM_Dispatcher_REST extends QM_Dispatcher {
 
 	}
 
+	/**
+	 * @param string $message
+	 * @param mixed[] $e
+	 * @phpstan-param array{
+	 *   message: string,
+	 *   file: string,
+	 *   line: int,
+	 *   type?: int,
+	 *   trace?: mixed|null,
+	 * } $e
+	 */
+	public function output_fatal( $message, array $e ): void {
+		if ( ! headers_sent() ) {
+			header( 'Content-Type: application/json; charset=' . get_option( 'blog_charset' ) );
+		}
+
+		echo wp_json_encode(
+			array(
+				'code' => 'qm_fatal',
+				'message' => $message,
+				'data' => $e,
+			),
+			JSON_UNESCAPED_SLASHES
+		);
+	}
 }
 
 /**

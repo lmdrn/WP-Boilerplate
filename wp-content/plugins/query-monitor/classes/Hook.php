@@ -9,28 +9,31 @@ class QM_Hook {
 
 	/**
 	 * @param string $name
+	 * @param string $type
 	 * @param array<string, WP_Hook> $wp_filter
 	 * @param bool $hide_qm
 	 * @param bool $hide_core
 	 * @return array<int, array<string, mixed>>
+	 * @phpstan-param 'action'|'filter' $type
 	 * @phpstan-return array{
 	 *   name: string,
+	 *   type: 'action'|'filter',
 	 *   actions: list<array{
 	 *     priority: int,
 	 *     callback: array<string, mixed>,
 	 *   }>,
 	 *   parts: list<string>,
-	 *   components: array<string, string>,
+	 *   components: array<string, QM_Component>,
 	 * }
 	 */
-	public static function process( $name, array $wp_filter, $hide_qm = false, $hide_core = false ) {
+	public static function process( $name, string $type, array $wp_filter, $hide_qm = false, $hide_core = false ) {
 
 		$actions = array();
 		$components = array();
 
 		if ( isset( $wp_filter[ $name ] ) ) {
 
-			# http://core.trac.wordpress.org/ticket/17817
+			# https://core.trac.wordpress.org/ticket/17817
 			$action = $wp_filter[ $name ];
 
 			foreach ( $action as $priority => $callbacks ) {
@@ -47,7 +50,7 @@ class QM_Hook {
 							continue;
 						}
 
-						$components[ $callback['component']->name ] = $callback['component']->name;
+						$components[ $callback['component']->get_id() ] = $callback['component'];
 					}
 
 					$actions[] = array(
@@ -63,6 +66,7 @@ class QM_Hook {
 
 		return array(
 			'name' => $name,
+			'type' => $type,
 			'actions' => $actions,
 			'parts' => $parts,
 			'components' => $components,
